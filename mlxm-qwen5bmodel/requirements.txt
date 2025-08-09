@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+mlx
+mlx_lm
+pyinstaller
+pywebview 
+streamlit 
+requests
+markdown

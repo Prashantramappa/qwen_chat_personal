@@ -1,20 +1,26 @@
-FROM python:3.10-slim
-
-# Set working directory
-WORKDIR /app
+FROM python:3.11-slim
 
 # Install system dependencies
-RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set env vars
+ENV PYTHONUNBUFFERED=1 
+
+# Copy dependencies
+COPY requirements.txt .
 
 # Install Python dependencies
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY . .
+# Copy app
+COPY app.py .
 
-# Expose API port
+# Expose port
 EXPOSE 8000
 
-# Run API
-CMD ["python", "app.py"]
+# Run server
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+
