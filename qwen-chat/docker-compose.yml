@@ -1,0 +1,9 @@
+services:
+  qwen-server:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      HF_TOKEN: ${HF_TOKEN}
+    volumes:
+      - ./models:/root/.cache/huggingface

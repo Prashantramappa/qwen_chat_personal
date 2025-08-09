@@ -1,7 +1,5 @@
 fastapi
-uvicorn
-torch==2.1.0
-transformers
-accelerate
-numpy
-pandas
+uvicorn[standard]
+mlx
+mlx_lm
+pydantic
