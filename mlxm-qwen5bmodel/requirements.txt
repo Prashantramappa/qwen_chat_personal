@@ -7,3 +7,4 @@ pywebview
 streamlit 
 requests
 markdown
+watchdog
