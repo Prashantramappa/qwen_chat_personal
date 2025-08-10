@@ -18,7 +18,7 @@ app.add_middleware(
 
 class ChatRequest(BaseModel):
     messages: list[dict]
-    max_new_tokens: int = 200
+    max_new_tokens: int = 1024
 
 model = None
 tokenizer = None
