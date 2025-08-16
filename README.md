@@ -68,17 +68,9 @@ Open browser: http://localhost:8501
 
 ✅ Example Usage
 
-User: Hello
+Hello
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/d1fb3873-2adb-422d-8f8c-3fcdc9f3055c" />
 
-Assistant: "Hi there! How can I help you today?"
-
-User: Who are you?
-
-Assistant: "I’m your local Qwen MLX assistant running with FastAPI + Streamlit."
-
-User: Tell me something else
-
-Assistant: [Model-generated response]
 
 That’s it 🎯.
 You just run FastAPI (backend) + Streamlit (frontend), and they’ll talk to each other.
