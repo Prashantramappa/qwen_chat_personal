@@ -1,5 +1,0 @@
-fastapi
-uvicorn[standard]
-mlx
-mlx_lm
-pydantic
