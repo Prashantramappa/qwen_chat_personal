@@ -18,7 +18,7 @@ CORS enabled so Streamlit can call the API.
 
 Clone this repo
 
-git clone <your-repo-url>
+git clone https://github.com/Prashantramappa/qwen_chat_personal.git
 cd <your-repo-name>
 
 
