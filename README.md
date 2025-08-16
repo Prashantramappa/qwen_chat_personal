@@ -69,7 +69,8 @@ Open browser: http://localhost:8501
 ✅ Example Usage
 
 Hello
-<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/d1fb3873-2adb-422d-8f8c-3fcdc9f3055c" />
+<img width="1470" height="879" alt="image" src="https://github.com/user-attachments/assets/5aed096c-4e78-408e-b25a-d1c7b7d78e9a" />
+
 
 
 That’s it 🎯.
