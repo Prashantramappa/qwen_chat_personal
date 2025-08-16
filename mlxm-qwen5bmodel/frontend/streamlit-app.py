@@ -8,7 +8,7 @@ import time
 from typing import Optional, Tuple
 
 # ---------------- CONFIG (tweak these) ----------------
-API_URL = "http://127.0.0.1:8000/chat"   # change to your streaming endpoint
+API_URL = "http://127.0.0.1:8001/chat"   # change to your streaming endpoint
 STREAM_TIMEOUT = 120
 MAX_NEW_TOKENS_STREAM = 1024             # token budget for stream
 FINISH_TOKENS_INITIAL = 256              # initial tokens for finish attempt
